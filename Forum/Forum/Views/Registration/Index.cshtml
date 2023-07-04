@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Registration Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма входа</title>
+</head>
+<body>
+    <h2>Регистрация</h2>
+    <form action="/" method="post">
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required><br><br>
+
+        <label for="password">Псевдоним:</label>
+        <input type="text" id="password" name="psevdonim" required><br><br>
+
+        <label>Загрузить аватарку:</label>
+        <input type="file" name="uploads" /><br>
+
+        <p>Выберете, желаете ли восстановить аккаунт в случае потери пароля</p>
+        <div>
+            <input type="radio" id="RecoveryChoice1"
+                   name="isRecovery" value="noRecovery">
+            <label for="RecoveryChoice1">Не восстанавливать аккаунт</label>
+
+            <input type="radio" id="RecoveryChoice2"
+                   name="isRecovery" value="emailForRecovery">
+            <label for="RecoveryChoice2">Восстановление через кодовое слово</label>
+
+            <input type="radio" id="RecoveryChoice3"
+                   name="isRecovery" value="codewordForRecovery">
+            <label for="RecoveryChoice3">Восстановление через email</label>
+        </div><br><br>
+
+        <p>Пол</p>
+        <div>
+            <input type="radio" id="selectSex1"
+                   name="sex" value="male">
+            <label for="selectSex1">Мужской</label>
+
+            <input type="radio" id="selectSex2"
+                   name="sex" value="fmale">
+            <label for="selectSex2">Женский</label>
+        </div><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Зарегистрироватся">
+
+    </form>
+</body>
+</html>
