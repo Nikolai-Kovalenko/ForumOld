@@ -20,11 +20,9 @@ namespace Forum.Models
         [Required(ErrorMessage = "Это поле обязательно для заполнения")]
         public IFormFile photo { get; set; }
 
-        public bool isRecovery { get; set; }
+        public string? email { get; set; }
 
-        public string email { get; set; }
-
-        public string codeWord { get; set; }
+        public string? codeWord { get; set; }
 
         [UIHint("Password")]
         [Display(Name = "Введите пароль")]

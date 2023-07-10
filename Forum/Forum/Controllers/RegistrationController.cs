@@ -1,6 +1,8 @@
 ﻿using Forum.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 using System.IO;
+using System.Text;
 
 namespace Forum.Controllers
 {
@@ -25,7 +27,10 @@ namespace Forum.Controllers
             if (model.photo != null && model.photo.Length > 0)
             {
                 // Генерируем уникальное имя файла
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + model.photo.FileName;
+                DateTime curentTime = DateTime.UtcNow; 
+                // string uniqueFileName = model.psevdonim + "_" + curentTime);
+                StringBuilder sb = new StringBuilder(model.psevdonim + "_" + curentTime).Replace(" ", "").Replace(".", "").Replace(":", "");
+                string uniqueFileName = sb.ToString();
 
                 // Определяем путь к папке, где будут храниться загруженные фото
                 string uploadPath = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");

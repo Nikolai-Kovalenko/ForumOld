@@ -245,8 +245,8 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "F:\\ForumProject\\Forum\\Forum\\wwwroot\\uploads\\551e6ee8-e6e2-49a1-be70-0f0030232491_обои 1.jpg",
-      "PackagePath": "staticwebassets\\uploads\\551e6ee8-e6e2-49a1-be70-0f0030232491_обои 1.jpg"
+      "Id": "F:\\ForumProject\\Forum\\Forum\\wwwroot\\uploads\\naibator3000_10072023213826",
+      "PackagePath": "staticwebassets\\uploads"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Forum.Microsoft.AspNetCore.StaticWebAssets.props",
