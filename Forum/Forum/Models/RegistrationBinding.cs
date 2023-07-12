@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Web.Helpers;
 using System.Xml.Linq;
 
@@ -10,14 +11,17 @@ namespace Forum.Models
 
         [Display(Name = "Введите логин")]
         [Required(ErrorMessage = "Это поле обязательно для заполнения")]
+        [RegularExpression(@"^\S*$", ErrorMessage = "Логин не должен содержать пробелы")]
         public string login { get; set; }
 
         [Display(Name = "Введите псевдоним")]
         [Required(ErrorMessage = "Это поле обязательно для заполнения")]
+        [RegularExpression(@"^\S*$", ErrorMessage = "Псевдоним не должен содержать пробелы")]
         public string psevdonim { get; set; }
 
         [Display(Name = "Загрузите фото")]
         [Required(ErrorMessage = "Это поле обязательно для заполнения")]
+        [NotMapped]
         public IFormFile photo { get; set; }
 
         public string? email { get; set; }

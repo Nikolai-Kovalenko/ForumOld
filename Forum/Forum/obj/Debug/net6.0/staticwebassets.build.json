@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sEjO0kTjhrwfXWaObE6Ya+K9gAkm5Vc/K7jyjBIuoIs=",
+  "Hash": "f/EBhDbt56szHetR7SYQcP5uZqrcpW2LdpyUF3tnZkY=",
   "Source": "Forum",
   "BasePath": "_content/Forum",
   "Mode": "Default",
@@ -1069,23 +1069,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Identity": "F:\\ForumProject\\Forum\\Forum\\wwwroot\\uploads\\naibator3000_10072023213826",
-      "SourceId": "Forum",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\ForumProject\\Forum\\Forum\\wwwroot\\",
-      "BasePath": "_content/Forum",
-      "RelativePath": "uploads/naibator3000_10072023213826",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\naibator3000_10072023213826"
     }
   ]
 }

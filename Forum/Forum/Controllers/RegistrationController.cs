@@ -24,10 +24,10 @@ namespace Forum.Controllers
         public async Task<IActionResult> Index(RegistrationBinding model)
         {
 
-            if (model.photo != null && model.photo.Length > 0)
+            if (ModelState.IsValid)
             {
                 // Генерируем уникальное имя файла
-                DateTime curentTime = DateTime.UtcNow; 
+                DateTime curentTime = DateTime.UtcNow;
                 // string uniqueFileName = model.psevdonim + "_" + curentTime);
                 StringBuilder sb = new StringBuilder(model.psevdonim + "_" + curentTime).Replace(" ", "").Replace(".", "").Replace(":", "");
                 string uniqueFileName = sb.ToString();
@@ -44,14 +44,8 @@ namespace Forum.Controllers
                     await model.photo.CopyToAsync(fileStream);
                 }
 
-                // Другие операции, например, сохранение пути к файлу в базе данных
-                    
-/*                // Возвращаем результат
-                return RedirectToAction("Success");*/
-            }
+                model.registration_time = curentTime;
 
-            if (ModelState.IsValid)
-            {
                 return Redirect("~/Home/Index");
             }
 
